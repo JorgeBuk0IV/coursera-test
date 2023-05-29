@@ -1,0 +1,50 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply a font-family if desired */
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section {
+  width: 33.33%;
+  border: 1px solid black;
+  padding: 20px;
+  background-color: #F5F5F5;
+}
+
+.section h2 {
+  font-size: 125%;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 991px) {
+  .section {
+    width: 50%;
+  }
+
+  .section:nth-child(3) {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .section {
+    width: 100%;
+  }
+}
